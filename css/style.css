@@ -89,57 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-@media (max-width: 575px) {
-  section {
-    font-size: 38px;
-  }
-  .section_3, .section_4_1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .section_container {
-    position: sticky;
-    height: 100dvh;
-    -webkit-transition: 0.1;
-    transition: 0.1;
-    top: 0px;
-  }
-  /*.titile_section {
-      font-size: 20px;
-  }
-
-  .grid_structure_section_3 {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: 
-          "grid_block_1"
-
-
-  }    
-
-  .section_container {
-
-      background-color: aqua;
-      position: sticky;
-      top: 0px;
-      width: 100vw;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-
-      //transform: translateY(calc((50vh - 50%) * 0));
-      //margin-top: 100px;
-      padding: 100px 10px 100px;
-
-      border: 1px solid var(--black-color);
-  }*/
-}
 :root {
   --blue-color: #1b56ff;
   --pink-color: #c44eff;
@@ -580,6 +529,79 @@ header {
   height: 1500px;
 }
 
+.section_4_1_mobile {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  section {
+    font-size: 38px;
+  }
+  .section_3, .section_4_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section_container {
+    position: sticky;
+    height: 100dvh;
+    -webkit-transition: 0.1;
+    transition: 0.1;
+    top: 0px;
+  }
+  .section_4_1 {
+    display: none;
+  }
+  .section_4_1_mobile {
+    display: block;
+    background-color: aquamarine;
+  }
+  .img_1_section_3, .text_1_section_3,
+.text_2_section_3, .text_3_section_3,
+.text_4_section_3 {
+    display: none;
+  }
+  .grid_structure_section_3 {
+    display: block;
+  }
+  .text_6_section_3 {
+    padding-top: 20px;
+  }
+  /*.titile_section {
+      font-size: 20px;
+  }
+
+  .grid_structure_section_3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+          "grid_block_1"
+
+
+  }    
+
+  .section_container {
+
+      background-color: aqua;
+      position: sticky;
+      top: 0px;
+      width: 100vw;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+      //transform: translateY(calc((50vh - 50%) * 0));
+      //margin-top: 100px;
+      padding: 100px 10px 100px;
+
+      border: 1px solid var(--black-color);
+  }*/
+}
 .section_4_1_container {
   font-size: 24px;
 }
