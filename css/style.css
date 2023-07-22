@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .section_container {
     position: sticky;
-    width: 100dvh;
+    height: 100dvh;
     -webkit-transition: 0.1;
     transition: 0.1;
     top: 0px;
