@@ -557,6 +557,7 @@ header {
   .section_4_1_mobile {
     display: block;
     background-color: aquamarine;
+    height: 1500px;
   }
   .img_1_section_3, .text_1_section_3,
 .text_2_section_3, .text_3_section_3,
