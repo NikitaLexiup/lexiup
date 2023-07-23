@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   --pink-color: #c44eff;
   --white-color: white;
   --yellow-color: rgb(255, 230, 43);
-  --lite-grey-color: rgba(128, 128, 128, 0.293);
+  --lite-grey-color: rgba(138, 29, 29, 0.293);
   --title-grey-color: rgba(66, 66, 66, 0.667);
   --black-color: black;
 }
@@ -533,9 +533,14 @@ header {
   display: none;
 }
 
+@media (max-width: 375px) {
+  section {
+    font-size: 32px;
+  }
+}
 @media (max-width: 575px) {
   section {
-    font-size: 38px;
+    font-size: 36px;
   }
   .section_3, .section_4_1 {
     display: -webkit-box;
@@ -547,8 +552,8 @@ header {
   .section_container {
     position: sticky;
     height: 100dvh;
-    -webkit-transition: 0.1;
-    transition: 0.1;
+    -webkit-transition: 0.5;
+    transition: 0.5;
     top: 0px;
   }
   .section_4_1 {
