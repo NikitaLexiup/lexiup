@@ -8,6 +8,8 @@ window.onscroll = () => {
     const section3 = document.querySelector ('.section_3');
     const section4 = document.querySelector ('.section_4');
     const section41 = document.querySelector ('.section_4_1');
+    const section41Mobile = document.querySelector ('.section_4_1_mobile');
+    //const section41Mobile = document.querySelector ('.section_4_1_mobile');
     const section5 = document.querySelector ('.section_5');
     const section6 = document.querySelector ('.section_6');
     const section7 = document.querySelector ('.section_7');
@@ -204,6 +206,7 @@ window.onscroll = () => {
         blockPhone.classList.remove ('cards_bg');
         blockLaptop.classList.remove ('cards_bg');
     }
+    
 
     if(Y >= 9500) {
         text52.classList.remove ('text_2_section_5');
@@ -319,4 +322,24 @@ window.onscroll = () => {
     
 
 }
+
+
+const line = document.querySelector('.progress_line-item');
+
+const progressAnimation = () => {
+    let scrollTop = window.scrollY;
+    let windowHeight = window.innerHeight;
+    let siteHeight = document.documentElement.scrollHeight;
+
+    let procentageProgress = Math.floor(scrollTop / (siteHeight - windowHeight) * 100);
+    console.log(procentageProgress);
+
+    line.style.width = `${procentageProgress}%`;
+}
+
+window.addEventListener('scroll', () => {
+    progressAnimation();
+});
+
+
 
